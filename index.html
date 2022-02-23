@@ -4,6 +4,22 @@
 <meta charset="utf-8">
 <title>ONE - Office National de l'Enfance</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+<style>
+table, th, td {
+	border:1px solid black;
+	/*border-collapse: collapse;*/
+}
+
+table {
+	border-radius : 15px;
+	border-spacing: 50px;
+}
+
+td {
+	text-align: center;
+	vertical-align: middle;
+}
+</style>
 </head>
 <body>
 <header>
@@ -22,13 +38,70 @@
 				<li><a href="#">Link 1</a></li>
 			</ul>
 		</nav>
-		<form>
+		<form action="#" method="get">
 			<input name="search">
 			<button>Search</button>
 		</form>
 	</div>
 </header>
 <main>
+	<table>
+		<caption>Liste des membres</caption>
+		<thead>
+			<tr>
+				<th>id</th>
+				<th>Nom</th>
+				<th>Crédit</th>
+				<th>e-mail</th>
+				<th>photo</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Bob Sull</td>
+				<td rowspan="2">6500</td>
+				<td><a href="mailto:bob@sull.com">bob@sull</a></td>
+				<td><img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Bucket_hat_line_drawing.svg/1200px-Bucket_hat_line_drawing.svg.png" alt=""></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Fred Sull</td>
+				<td><a href="mailto:fred@sull.com">fred@sull</a></td>
+				<td><img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Bucket_hat_line_drawing.svg/1200px-Bucket_hat_line_drawing.svg.png" alt=""></td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>Lydia Von Graft</td>
+				<td>8500</td>
+				<td><a href="mailto:lydia@sull.com">lydia@sull</a></td>
+				<td><img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Bucket_hat_line_drawing.svg/1200px-Bucket_hat_line_drawing.svg.png" alt=""></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="5">&copy; EPFC - 2022</td>
+			</tr>
+		</tfoot>
+	</table>
+
+	<table>
+		<tr>
+			<th>Titre 1</th>
+			<th>Titre 2</th>
+			<th>Titre 3</th>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+	</table>
+
+
+
+
+
+
+
 </main>
 <footer>
 </footer>
