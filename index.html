@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>ONE - Office National de l'Enfance</title>
+<title>ONE - Office de la Naissance et de l'Enfance<</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
 <style>
 table, th, td {
@@ -11,31 +11,75 @@ table, th, td {
 }
 
 table {
-	border-radius : 15px;
-	border-spacing: 50px;
+	border-radius : 5px;
+	border-spacing: 5px;
+	box-shadow: 5px -5px 15px black;
+	background-color: white;
+	margin: 10px 0;
+}
+
+th {
+	padding: 0 5px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+}
+
+th:first-child {
+	border-radius: 5px 0 0 5px;
+}
+
+th:last-child {
+	border-radius: 0 5px 5px 0;
 }
 
 td {
 	text-align: center;
 	vertical-align: middle;
 }
+
+caption {
+	caption-side: bottom;
+	margin-top:5px;
+	background-color: white;
+}
+
+#main-menu ul {
+	margin: 0;
+}
+
+#main-menu li {
+	display: inline-block;
+}
+
+#header-bottom nav {
+	float: left;
+}
+
+#header-bottom form {
+	float: right;
+}
+
+main {
+	clear: both;
+	margin-top: 80px;
+}
 </style>
 </head>
 <body>
 <header>
 	<div id="header-top">
-		<h1>Office National de l'Enfance</h1>
+		<h1>Office de la Naissance et de l'Enfance</h1>
 	</div>
 	<div id="header-bottom">
-		<nav>
+		<nav id="main-menu">
 			<ul>
 				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+				<li><a href="#">Link 4</a></li>
+				<li><a href="#">Link 5</a></li>
+				<li><a href="#">Link 6</a></li>
 			</ul>
 		</nav>
 		<form action="#" method="get">
@@ -85,23 +129,43 @@ td {
 		</tfoot>
 	</table>
 
+	<!-- Disposition verticale -->
 	<table>
 		<tr>
-			<th>Titre 1</th>
-			<th>Titre 2</th>
-			<th>Titre 3</th>
+			<th>th 1</th>
+			<th>th 2</th>
+			<th>th 3</th>
 		</tr>
 		<tr>
-			<td></td>
+			<td>td row1 col1</td>
+			<td>td row1 col2</td>
+			<td>td row1 col3</td>
+		</tr>
+		<tr>
+			<td>td row2 col1</td>
+			<td>td row2 col2</td>
+			<td>td row2 col3</td>
 		</tr>
 	</table>
 
-
-
-
-
-
-
+	<!-- Disposition horizontale -->
+	<table>
+		<tr>
+			<th>th 1</th>
+			<td>td row1 col2</td>
+			<td>td row1 col3</td>
+		</tr>
+		<tr>
+			<th>th 2</th>
+			<td>td row2 col2</td>
+			<td>td row2 col3</td>
+		</tr>
+		<tr>
+			<th>th 3</th>
+			<td>td row3 col2</td>
+			<td>td row3 col3</td>
+		</tr>
+	</table>
 </main>
 <footer>
 </footer>
